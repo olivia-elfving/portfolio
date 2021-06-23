@@ -9,6 +9,6 @@ function fetchWeather() {
             document.getElementById('weather_img').src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
             document.getElementById('weather').innerHTML = celcius;
         });
-}
-window.addEventListener('DOMContentLoaded', init);
+};
 
+window.addEventListener('DOMContentLoaded', fetchWeather);

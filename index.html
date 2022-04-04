@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Olivias portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Lato:wght@400;700&family=Open+Sans&  family=Oswald&family=PT+Sans&family=Raleway&family=Roboto+Condensed&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <!-- arrow --> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+        <!--Barchart-->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="script.js"></script>
+        <!--feather icons-->
+        <script src="https://unpkg.com/feather-icons"></script>
+        <!--Font awsome-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+        <!--Weather api-->
+        <script src="weather.js"></script>
+    </head>
+
+    <body>
+        <div class="firstpage">
+            <div class="container">
+                <h1>Olivia Elfving</h1>
+                <h3>Frontend-utvecklare</h3>   
+            </div>
+            <div class="arrow fadein">
+                <span class="fa fa-arrow-down fa-2x bounce"></span>
+            </div>
+        </div>
+    
+        <!--Presentation-->
+        <div class=tilted__container>
+            <div class="wrapper presentation__wrapper">
+                <div class="presentation__container">
+                    <img class ="picture" src="/me.jpg">
+                    <!--<div class="picture">
+                        <i data-feather="smile"></i>
+                        <script>feather.replace()</script>
+                    </div>-->
+                    <div id="presentation" class="letter">
+                        <h3>Hej!</h3>
+                        <p> Mitt namn är Olivia Elfving och jag är en <b>ingenjör</b> med stort intresse för <b>frontendutveckling</b>. Under det senaste åreN har jag byggt en grundläggande kunskap i bland annat <b>JavaScript</b>, <b>CSS</b> och <b>HTML</b>. 
+                        <p>Jag drivs av att arbeta med problemlösning och vill kombinera mitt intresse för <b>teknik</b> och <b>design</b> i mitt yrkesliv. Som person är jag mycket utåtriktad och har lätt för att omvandla uppgifter till affärsnytta i en organisation.</p>
+                        <p> Vill testa något nytt och letar efter nästa utmaning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Data presentation-->
+        <div class="wrapper">
+            <div class="border-container">
+                <div class="counter__container box">
+                    <h4>Ålder</h4>
+                    <div id="counter" class="counter"></div>
+                </div>
+                <div class="shortTextPresentation box">
+                    <h3>Nuvarnade position:</h3>
+                    <p>Teknisk handläggare</p>
+                </div>
+                <div class="weather__container box">
+                    <h4>Vädret hos Olivia</h4>
+                    <div class="weather">
+                        <!-- i data-feather="sun"></i -->
+                        <img id="weather_img" src="https://openweathermap.org/img/wn/01d@2x.png" width="50x" height="50px" alt="">
+                        <script>feather.replace()</script>
+                    </div>
+                    <span id="weather"></span>
+                </div>
+            </div>
+        
+            <div class="data__container">
+                <div id="chart"></div>
+                <div class="interests box">
+                    <div class="interest__container__header">
+                        <h3>Intressen</h3>            
+                    </div>
+                    <div class="interest__container">
+                        <i class="fas fa-chart-line icon"></i>
+                        <p>Aktier</p>
+                    </div>
+                    <div class="interest__container">
+                        <i class="fas fa-crow icon"></i>
+                        <p>Fågelskådning</p>
+                    </div>
+                    <div class="interest__container">
+                        <i class="fas fa-balance-scale icon"></i>
+                        <p>Yoga</p>
+                    </div>
+                    <div class="interest__container">
+                        <i class="fas fa-glass-cheers icon"></i>
+                        <p>Öl</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
